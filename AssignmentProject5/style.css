@@ -7,7 +7,9 @@
 }
 
 /* Media query at 576 px */
-
+.hamburger{
+    display: none;
+}
 .navigation{
     display: flex;
     list-style: none;
@@ -41,4 +43,146 @@ button{
 
 h2{
     color: rgb(197, 197, 89);
+}
+
+.sub-hero{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.underline{
+    height: 10px;
+    background-color: blue;
+    width: 170px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+}
+
+.imageList1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.imageList2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.imgs{
+    cursor: pointer;
+    margin: 10px;
+    font-size: x-large;
+}
+.photo{
+    height: 400px;
+}
+.contacts{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+.underline2{
+    height: 15px;
+    background-color: blue;
+    width: 190px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.social-img{
+    width: 30px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .hamburger{
+        display: block;
+        margin: 10px;
+    }
+    .navbar{
+        display: none;
+    }
+
+    .hero{
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro-line-1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro-line-2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .sub-hero{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .underline{
+        height: 8px;
+        width: 120px;
+        
+    }
+
+    .imageList1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imageList2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img[alt="pc"]{
+        height: 300px;
+        width: 300px;
+    }
+
+    .photo{
+        height: 200px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: large;
+    }
+
+    .underline2{
+        height: 12px;
+        width: 170px;
+    }
+
+    .social-img{
+        width: 25px;
+        margin: 8px;
+        cursor: pointer;
+    }
 }
